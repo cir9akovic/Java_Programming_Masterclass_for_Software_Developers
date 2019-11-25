@@ -14,5 +14,6 @@ public class Temperature {
 
         int c = (int) (f - 32) * 5/9;
         System.out.println("Converted temperature is: " + c);
+
     }
 }
