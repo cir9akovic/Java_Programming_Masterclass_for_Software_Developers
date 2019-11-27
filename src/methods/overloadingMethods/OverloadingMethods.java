@@ -12,6 +12,12 @@ public class OverloadingMethods {
 
         int playerHealthAfterSeconfAttack = attack(playerHealthAfterFirstAttack, 30, 10);
         System.out.println(playerHealthAfterSeconfAttack);
+
+        //--------------------------------------------------------------------------------------------------------
+
+        double test = attack(fullPlayerHealth, 70);
+        System.out.println(test);
+
     }
 
     public static int attack(int playerHealth, int firstDamage){
@@ -24,5 +30,13 @@ public class OverloadingMethods {
         damageHealth -= secondDamage - bonusDamage;
         System.out.println("Health after second attack with bonus damage: " + damageHealth);
         return damageHealth;
+    }
+
+    //-------------------------------------------------------------------------------------------------------------
+
+    public static double attack(double hea, double dam){
+        hea -= dam;
+        System.out.println("Health after test attack: " + hea);
+        return hea;
     }
 }
