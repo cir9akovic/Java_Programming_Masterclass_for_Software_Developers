@@ -30,5 +30,7 @@ public class Main {
         We can declare static methods with same signature in subclass,
         but it is not considered overriding as there won’t be any run-time polymorphism */
 
+        /* We can return different type of overriding method if it is subclass */
+
     }
 }
